@@ -7,8 +7,10 @@
     max-width: 100%; /* Prevents navbar from extending beyond viewport */
     color: white; /* White text color */
     display: flex;
+    background-color: #02052c;
     align-items: center;
-    padding: 10px 20px; /* Padding around the navbar */
+    height: 60px;
+    padding: 10px; /* Padding around the navbar */
     box-sizing: border-box; /* Ensures padding is included in width */
     z-index: 2; /* Ensures the navbar is above the particles */
     flex-direction: row; /* Align items in a row */
@@ -39,7 +41,7 @@
 .navbar a {
     color: white;
     text-decoration: none;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     padding: 10px 15px; /* Padding around links */
     margin-left: 1px; /* Spacing between links */
     border-radius: 5px; /* Rounded corners for links */
