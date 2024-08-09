@@ -1,21 +1,36 @@
-// src/components/Header.js
 import React from "react";
-import './Header.css'; // CSS file for header-specific styles
-import logo from '../logo.png'; // Adjust the path to your logo
+import { Link } from "react-router-dom";
+import './Header.css'; // Optional: Custom styles if needed
+import logo from '../assets/logo.png'; // Adjust the path to your logo
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Team from "./Team"; // Import Bootstrap CSS
 
 const Header = () => {
   return (
-    <div className="navbar">
-      <div className="left-content">
-        <img src={logo} alt="Logo" />
-        <span>Mobile Application Development</span>
+    <nav className="navbar navbar-expand-lg navbar-light">
+      <div className="container">
+        <Link className="navbar-brand" to="/">
+          <img src={logo} alt="Logo" style={{ width: '50px' }} />
+          Mobile Application Development
+        </Link>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <Link className="nav-link" to="/">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/team">Team</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">About</Link>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div className="nav-links">
-        <a href="#home">Home</a>
-        <a href="#team">Team</a>
-        <a href="#about">About</a>
-      </div>
-    </div>
+    </nav>
   );
 };
 

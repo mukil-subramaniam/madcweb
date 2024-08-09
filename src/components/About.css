@@ -1,0 +1,36 @@
+/* src/components/About.css */
+.about-container {
+    position: relative; /* Ensures proper positioning */
+    z-index: 2; /* Ensure it appears on top of particles */
+    color: white; /* Set text color to be visible over particles */
+    padding: 50px; /* Adds padding arbackground: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background to improve text visibility */
+    border-radius: 10px; /* Optional: Rounded corners for the container */
+    margin: 20px auto; /* Center container horizontally with margin */
+    max-width: 800px; /* Restrict the maximum width */
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 20px; /* Space below the centered text */
+}
+
+blockquote {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #e0e0e0; /* Light color for blockquotes */
+    margin: 20px 0; /* Add spacing above and below the blockquote */
+    padding: 20px; /* Padding inside the blockquote */
+    /* Optional: Add a left border for emphasis */
+}
+
+.blockquote-footer {
+    font-size: 1rem;
+    color: #b0b0b0; /* Slightly darker for footer text */
+    margin-top: 10px; /* Space above the footer text */
+}
+
+.lead {
+    font-size: 1.25rem; /* Larger font size for lead paragraphs */
+    margin-top: 20px; /* Space above the lead paragraph */
+    line-height: 1.6; /* Increase line height for better readability */
+}

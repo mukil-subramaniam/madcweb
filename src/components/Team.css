@@ -1,0 +1,47 @@
+/* src/components/Team.css */
+.team-container {
+    position: relative; /* Ensure the container is properly positioned */
+    z-index: 10; /* Ensure it's above the particles */
+    padding: 20px;
+    /* Padding around the container */
+  }
+  
+  .team-card {
+    top:20% ;
+    align-items: center;
+    background-color: #c23e3e;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    height: 24rem;
+    padding: 15px;
+    text-align: center;
+    width: 20rem;  }
+ 
+  .team-card-img {
+    border-radius: 50%;
+    height: 230px;
+    margin-bottom: 1rem;
+    width: 230px;
+     max-width: 100%;
+     display: block;
+    vertical-align: middle; /* Set width to match height */
+   
+  }
+ 
+  .team-card-body {
+    padding: 10px; /* Padding inside the card body */
+  }
+  
+  .team-card-title {
+    font-size: 1.25rem; /* Font size for the card title */
+  }
+  
+  .team-card-position {
+    font-size: 1rem; /* Font size for the card position */
+  }
+  h1{
+    color: white;
+    font-size: 30px;
+  }

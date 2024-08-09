@@ -2,64 +2,57 @@
 .navbar {
     position: fixed; /* Fixes the navbar at the top */
     top: 0;
-    right: 25; /* Aligns the navbar to the right side of the viewport */
     width: 100%; /* Full width of the viewport */
-    max-width: 100%; /* Prevents navbar from extending beyond viewport */
+    background-color: #02052c; /* Navbar background color */
     color: white; /* White text color */
+    z-index: 2; /* Ensures the navbar is above other elements */
+  }
+  
+  .navbar .navbar-brand {
     display: flex;
-    background-color: #02052c;
+    padding: auto;
+    color: white;
     align-items: center;
-    height: 60px;
-    padding: 10px; /* Padding around the navbar */
-    box-sizing: border-box; /* Ensures padding is included in width */
-    z-index: 2; /* Ensures the navbar is above the particles */
-    flex-direction: row; /* Align items in a row */
-     /* Optional bottom border for separation */
-}
-
-.navbar .left-content {
-    display: flex;
-    align-items: center;
-}
-
-.navbar .left-content img {
-    width: 50px; /* Adjust logo size as needed */
-    margin-right: 20px; /* Space between logo and text */
-}
-
-.navbar .left-content span {
-    margin-right: 20px; 
-    font-size: large;
-    font-family:Arial, Helvetica, sans-serif;/* Space between text and navigation links */
-}
-
-.navbar .nav-links {
+  }
+  
+  .navbar .navbar-brand img {/* Adjust logo size */
+    margin-right: 15px; /* Space between logo and text */
+  }
+  
+  .navbar .navbar-brand span {
+    font-size: 1.25rem; /* Larger font size for brand name */
+    font-family: Arial, Helvetica, sans-serif; /* Font family for brand name */
+  }
+  
+  .navbar .navbar-nav {
     margin-left: auto; /* Pushes the navigation links to the right */
-    display: flex; /* Aligns links horizontally */
-}
-
-.navbar a {
+  }
+  
+  .navbar .nav-item {
+    margin-left: 10px; /* Spacing between nav items */
+  }
+  
+  .navbar .nav-link {
     color: white;
     text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* Font family for links */
     padding: 10px 15px; /* Padding around links */
-    margin-left: 1px; /* Spacing between links */
     border-radius: 5px; /* Rounded corners for links */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
-}
-
-.navbar a:hover {
+  }
+  
+  .navbar .nav-link:hover {
     background-color: #555; /* Darker background on hover */
-    color: #fff; 
-    /* Text color on hover */
-}
-
-.navbar a.active {
-    background-color: #007bff; /* Highlight color for the active link */
-    color: #fff; /* Text color for the active link */
-}
-
-.navbar a:focus {
+    color: #fff; /* Text color on hover */
+  }
+  
+  .navbar .nav-link.active {
+    background-color: white; /* Highlight color for the active link */
+    color: #02052c; /* Text color for the active link */
+  }
+  
+  .navbar .nav-link:focus {
     outline: 2px solid #007bff; /* Outline for focused link */
     outline-offset: 2px; /* Offset outline from the link */
-}
+  }
+  

@@ -1,0 +1,21 @@
+/* src/components/Home.css */
+.home-container {
+    position: absolute; /* Ensure the container is positioned absolutely */
+    top: 22%; /* Center vertically */
+    left: 20%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the content */
+    color: white; /* White text color */
+    z-index: 10; /* Ensure it's above the particles */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    max-width: 500px; /* Optional: max width for better readability */
+}
+.home-image {
+  height: 80%; /* Increase the height of the image */
+ 
+  text-align: right;
+  max-width: 50%;
+/* Adjust to fit within the container */
+  border-radius: 10px;
+   /* Rounded corners for the image */
+}
